@@ -1,0 +1,38 @@
+# Maximum reach of the horn blast, in nodes.
+trainhorn_gun_range (Blast range) float 8 1 32
+
+# Half-angle of the blast cone, in degrees (30 = a 60 degree wide cone).
+trainhorn_gun_cone_angle (Cone half-angle) float 30 1 89
+
+# Stun length in seconds at point-blank range. Scaled down with distance.
+trainhorn_gun_stun_duration (Stun duration) float 3 0.1 30
+
+# Walking-speed multiplier for a target at point-blank range (0.3 = 30% speed).
+trainhorn_gun_stun_speed (Stun speed multiplier) float 0.3 0 1
+
+# HP damage at point-blank range. 0 = no damage, the horn only stuns.
+trainhorn_gun_damage (Damage) int 0 0 20
+
+# Knockback speed at point-blank range (nodes per second). 0 disables knockback.
+trainhorn_gun_knockback (Knockback) float 3 0 20
+
+# Seconds between two blasts of the same player.
+trainhorn_gun_cooldown (Cooldown) float 2 0 60
+
+# Number of blasts before the tool breaks. 0 = unbreakable.
+trainhorn_gun_uses (Uses before breaking) int 200 0 65535
+
+# Strength at the edge of the range (0..1). Strength falls linearly in dB from 1 at 1 node to this value at max range.
+trainhorn_gun_min_strength (Strength at max range) float 0.15 0 1
+
+# Whether players can be stunned (also requires enable_pvp).
+trainhorn_gun_affect_players (Affect players) bool true
+
+# Require a clear line of sight (no solid nodes) between the horn and the target.
+trainhorn_gun_require_los (Require line of sight) bool true
+
+# Seconds a player must wait between two /victoryhorn uses.
+trainhorn_gun_victory_cooldown (Victory horn cooldown) float 30 0 3600
+
+# Also sound the victory horn when a player defeats another player.
+trainhorn_gun_victory_on_kill (Victory horn on player kill) bool false
