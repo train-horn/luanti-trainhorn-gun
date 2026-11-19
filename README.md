@@ -71,7 +71,7 @@ trainhorn_gun.falloff.level_at(130, 16)   -- 130 dB at 1 m -> ~105.9 dB at 16 m
 
 ## Tests
 
-`./run_tests.sh` (from the source repository) runs:
+`sh run_tests.sh` (from the source repository) runs:
 - the unit tests for `falloff.lua` and `cone.lua`;
 - an integration test that loads `init.lua` against a mocked `minetest` API, fires the tool at fake players and mobs, and checks who is stunned and that everyone is restored;
 - `luacheck`;

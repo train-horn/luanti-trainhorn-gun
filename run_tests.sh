@@ -17,6 +17,6 @@ fi
 if command -v luantiserver >/dev/null 2>&1 || command -v luanti >/dev/null 2>&1 \
 	|| [ -x /Applications/luanti.app/Contents/MacOS/luanti ]; then
 	echo "== headless Luanti server"
-	tests/engine/run_server_test.sh
+	sh tests/engine/run_server_test.sh
 fi
 echo "ALL TESTS PASSED"
